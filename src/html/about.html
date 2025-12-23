@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании | Колобок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+@@include('partials/header.html')
+
+<section class="about-header">
+    <div class="hero-slider">
+        <div class="slide" style="background-image: url('assets/images/slide1.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide2.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide3.png');"></div>
+    </div>
+    
+    <div class="container hero-content">
+        <h1>О компании «Колобок»</h1>
+        <p>Надёжный партнёр на рынке с 2007 года</p>
+    </div>
+</section>
+
+<section class="section-spacing">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text reveal">
+                <h2 class="about-title">НАША МИССИЯ И ИСТОРИЯ</h2>
+                <p>ООО «Компания «Колобок» образована в 2007 году и является одним из лидеров по производству и продаже бакалейной продукции в Нижегородском регионе. Мы гордимся тем, что за годы работы мы не только нарастили производственные мощности, но и завоевали доверие крупнейших федеральных и региональных торговых сетей.</p>
+                <br>
+                <p>Наша цель — обеспечить потребителей качественными продуктами по доступным ценам. Мы активно развиваем широкую географию поставок и постоянно расширяем ассортимент, предлагая рынку современные и востребованные продукты под собственными торговыми марками.</p>
+            </div>
+            
+            <div class="about-director reveal">
+                <img class="director-img" src="/assets/images/director.png" alt="Директор компании Колобок">
+                <p class="director-caption">Директор компании «Колобок»</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <p style="text-align: center; color: #999; margin-bottom: 20px; font-size: 1.3rem;">
+            Нам доверяют лидеры ритейла
+        </p>
+        <div class="partners-grid">
+            <img class="partner-logo" src="/assets/images/br1.png"></img>
+            <img class="partner-logo" src="/assets/images/br2.png"></img>
+            <img class="partner-logo" src="/assets/images/br3.png"></img>
+            <img class="partner-logo" src="/assets/images/br4.png"></img>
+            <img class="partner-logo" src="/assets/images/br5.png"></img>
+        </div>
+    </div>
+</section>
+
+<section class="reveal cta-about">
+    <div class="container cta-box">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0;">«НАША ОТВЕТСТВЕННОСТЬ — ВАШЕ ДОВЕРИЕ»</h2>
+        <p style="margin-top: 15px; font-size: 1.1rem; opacity: 0.9;">— Принцип, которым мы руководствуемся каждый день.</p>
+    </div>
+</section>
+
+@@include('partials/footer.html')
+
+<script src="js/main.js"></script>
+</body>
+</html>

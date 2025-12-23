@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Партнерство | Колобок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400 ;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="partners-page">
+
+@@include('partials/header.html')
+
+<section class="about-header">
+    <div class="hero-slider">
+        <div class="slide" style="background-image: url('assets/images/slide1.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide2.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide3.png');"></div>
+    </div>
+    
+    <div class="container hero-content">
+        <h1>Партнёрство</h1>
+        <p>Компания «Колобок» нацелена на партнёрство, работа компании и развитие построено именно на этом принципе</p>
+    </div>
+</section>
+
+<section class="section-spacing">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="section-title">Наш девиз: «Мы зарабатываем сами и даем зарабатывать другим»</h2>
+
+            <div class="partners-description">
+                <p>Если у вас есть желание и желание работать, есть капитал и желание получать доход или есть смежный бизнес и желание работать на партнерских условиях – мы всегда готовы договариваться о совместном доходе, разделе дохода и контроле.</p>
+                
+                <ul class="partners-list">
+                    <li>У вас есть интересные контакты с поставщиками, покупателями? Опыт работы с товарной группой? Опыт продаж на определенной территории? — Звоните, договоримся об условиях работы.</li>
+                    <li>У нас эксклюзивная позиция, или просто хороший дисконт. У нас есть транспорт для совместных партнерских условиях перевозки грузов 20 тн по России, 10/5/1.5 тн по городу и области. Гарантируем постоянную загрузку, рыночные цены. Возможно долевое участие в транспортном бизнесе.</li>
+                    <li>Необходим партнер для совместной закупки большой партии товаров? У нас есть Ж/Д ветка и готовность к совместной работе.</li>
+                    <li>У вас есть торговая точка, вы желаете получить крупного поставщика с широким ассортиментом и ценами крупного опта и готовы работать под нашей торговой маркой? — Звоните, договоримся о разделе дохода и цене.</li>
+                    <li>Интересует фасовка собственного товара? Мы готовы оказать вам услуги по фасовке в потребительскую тару от 0,5 до 10кг.</li>
+                </ul>
+                
+                <p>Если вас заинтересовало наше предложение, или вам есть что предложить для нас, пишите нам, мы открыты для сотрудничества: <a href="mailto:direktor@kolobok-nn.ru" class="email-link">direktor@kolobok-nn.ru</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="cta-section-fullwidth">
+    <div class="container">
+        <div class="cta-box reveal">
+            <h3>Сделать коммерческое предложение?</h3>
+            <p>Мы всегда открыты для новых партнеров. Заполните форму, и наш отдел закупок свяжется с вами.</p>
+            
+            <form class="partners-form">
+                <input type="text" placeholder="Название компании" class="form-input" required>
+                <input type="text" placeholder="Ваш товар" class="form-input" required>
+                <input type="text" placeholder="Телефон / Email" class="form-input" required>
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <span>Я согласен(а) на обработку персональных данных</span>
+                </label>
+                <button type="submit" class="btn btn-pulse">ОТПРАВИТЬ ПРЕДЛОЖЕНИЕ</button>
+            </form>
+            
+            <p style="margin-top: 25px;">
+                или пишите напрямую 
+                <a href="" style="color: var(--accent-color); font-weight: bold;">
+                    direktor@kolobok-nn.ru
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+@@include('partials/footer.html')
+
+<script src="js/main.js"></script>
+</body>
+</html>

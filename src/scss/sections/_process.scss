@@ -1,0 +1,74 @@
+.process {
+    padding-top: 100px;
+
+    @media (max-width: 576px) {
+        padding-top: 60px;
+    }
+
+    .process-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid вместо flex */
+        gap: 40px; /* Отступы между шагами */
+        margin-top: 50px;
+        padding: 0 20px; /* Отступы для мобильных */
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    .step-item {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding: 20px; /* Отступы внутри карточки */
+
+        h4 {
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            color: var(--text-grey);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0 auto; /* Центрирование */
+            max-width: 280px; /* Ограничение ширины текста */
+            width: auto; /* Убираем фикс 330px */
+        }
+    }
+
+    .step-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--white);
+        border: 2px solid var(--accent-color);
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        &:hover {
+            background: var(--accent-color);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+    }
+}

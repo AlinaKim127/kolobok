@@ -1,0 +1,135 @@
+.info {
+    margin-top: -10px;
+}
+
+.price-volume-list {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+.individual-terms-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    
+    li {
+        margin-bottom: 15px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.customer-docs {
+    width: 75%;
+    margin-top: 40px;
+    padding: 30px;
+    background: var(--bg-light);
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    
+    h3 {
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+    }
+    
+    > p {
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+}
+
+.benefits-list {
+    list-style: none;
+    padding-top: 15px;
+    
+    li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .checkmark {
+        color: var(--accent-color);
+        font-size: 1.2rem;
+        line-height: 1;
+        margin-top: 6px;
+    }
+}
+
+.feedback-note {
+    margin-top: 20px;
+}
+
+.email-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 576px) {
+    .customer-docs {
+        margin-top: 30px;
+        padding: 16px;
+        
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+    
+    .price-volume-list,
+    .individual-terms-list {
+        font-size: 1rem;
+        padding-left: 18px;
+    }
+    
+    .benefits-list {
+        li {
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        
+        .checkmark {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .customer-docs {
+        padding: 14px;
+        width: 100%;
+        
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    
+    .price-volume-list,
+    .individual-terms-list {
+        font-size: 1.2rem;
+        padding-left: 16px;
+    }
+}

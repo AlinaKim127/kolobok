@@ -1,0 +1,66 @@
+.brands {
+    padding: clamp(40px, 5vw, 80px); 
+
+    .section-title {
+        margin-bottom: 40px; /* Отступ от заголовка */
+    }
+
+    .brands-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(15px, 3vw, 40px); /* Адаптивный gap */
+        margin-top: 30px;
+        padding: 0 10px; /* Отступы для мобильных */
+
+        .brand-tag {
+            font-weight: 800;
+            color: var(--primary-color);
+            transition: 0.3s;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            font-size: clamp(0.9rem, 1.5vw, 1.3rem); /* Адаптивный размер */
+            letter-spacing: 0.5px;
+            text-align: center;
+
+            &:hover {
+                color: var(--accent-color);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .brands {
+        padding: 40px 10px;
+
+        .brands-wrapper {
+            gap: 15px;
+
+            .brand-tag {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                flex: 0 0 45%; /* 2 в ряд на планшетах */
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .brands {
+        padding: 30px 10px;
+
+        .brands-wrapper {
+            gap: 10px;
+
+            .brand-tag {
+                padding: 6px 15px;
+                font-size: 0.8rem;
+                flex: 0 0 100%; /* 1 в ряд на телефонах */
+                max-width: 250px;
+                margin: 0 auto; /* Центрирование */
+            }
+        }
+    }
+}

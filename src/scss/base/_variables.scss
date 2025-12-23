@@ -1,0 +1,16 @@
+:root {
+    --accent-rgb: 230, 172, 0;
+    --primary-color: #2c3e50;
+    --accent-color: #e6ac00;
+    --accent-hover: #c99600;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --text-grey: #6c757d;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --radius: 12px;
+    --font-main: 'Inter', sans-serif;
+}
+
+$container-max-width: 1400px;
+$section-padding: 80px 0;

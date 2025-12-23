@@ -1,0 +1,156 @@
+.hero {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+
+    /* Слайдер с 3 фото */
+    .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        animation: slideshow 12s infinite; /* 3 слайда × 4 сек = 12 секунд */
+    }
+
+    /* Задержки для 3 слайдов */
+    .slide:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .slide:nth-child(2) {
+        animation-delay: 4s;
+    }
+
+    .slide:nth-child(3) {
+        animation-delay: 8s;
+    }
+
+    /* Анимация для 3 слайдов */
+    @keyframes slideshow {
+        0% {
+            opacity: 0;
+        }
+        2.5% { /* 0.3с / 12с ≈ 2.5% - плавное появление */
+            opacity: 1;
+        }
+        33.33% { /* 4с активного показа */
+            opacity: 1;
+        }
+        35.83% { /* Начало исчезания (0.3с) */
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    /* Контент поверх слайдов */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+        animation: fadeInUp 1s ease-out;
+        padding: 0 20px; /* Отступы для мобильных */
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem); /* Адаптивный размер */
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem); /* Адаптивный размер */
+            margin-bottom: 40px;
+            opacity: 0.9;
+            color: var(--white);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Контейнер кнопок */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap; /* Перенос кнопок на мобильных */
+
+            .btn {
+                flex: 1;
+                max-width: 300px; /* Максимальная ширина кнопки */
+                min-width: 200px; /* Минимальная ширина */
+            }
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+                align-items: center;
+
+                .btn {
+                    width: 100%;
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 450px; /* Уменьшаем для мобильных */
+        height: 70vh;
+
+        .hero-content {
+            padding: 0 15px;
+
+            h1 {
+                font-size: clamp(1.8rem, 8vw, 2.5rem);
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: clamp(0.95rem, 4vw, 1.1rem);
+                margin-bottom: 30px;
+            }
+
+            .btn-container .btn {
+                font-size: 0.85rem;
+                padding: 12px 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 400px;
+
+        .hero-content {
+            h1 {
+                font-size: clamp(1.5rem, 10vw, 2rem);
+            }
+
+            p {
+                font-size: clamp(0.9rem, 5vw, 1rem);
+            }
+        }
+    }
+}

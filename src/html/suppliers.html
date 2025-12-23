@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поставщикам | Колобок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="suppliers-page">
+
+@@include('partials/header.html')
+
+<section class="about-header">
+    <div class="hero-slider">
+        <div class="slide" style="background-image: url('assets/images/slide1.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide2.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide3.png');"></div>
+    </div>
+    
+    <div class="container hero-content">
+        <h1>Поставщикам</h1>
+        <p>Приглашаем к сотрудничеству поставщиков сырья и готовой продукции. Гарантируем стабильные объемы закупок.</p>
+    </div>
+</section>
+
+<main class="container">
+    <section class="interests-section">
+        <h2 class="section-title">Нам интересны</h2>
+        <div class="yellow-line"></div>
+        <p class="section-subtitle">Компания «Сладкая доля +» (ГК «Колобок») регулярно закупает следующие позиции:</p>
+        
+        <div class="interests-grid">
+            <div class="interest-item">Сахарный песок</div>
+            <div class="interest-item">Крупы</div>
+            <div class="interest-item">Макаронные изделия</div>
+            <div class="interest-item">Мука</div>
+            <div class="interest-item">Консервация</div>
+            <div class="interest-item">Чай / кофе</div>
+            <div class="interest-item">Другое</div>
+        </div>
+    </section>
+
+    <section class="conditions-section">
+        <h2 class="section-title">Условия сотрудничества</h2>
+        <div class="yellow-line"></div>
+        
+        <div class="conditions-grid">
+            <div class="condition-card">
+                <img src="/assets/images/train.svg" alt="Ж/Д" class="condition-icon">
+                <h3>Собственная Ж/Д ветка</h3>
+                <p>Принимаем вагонные поставки. Снижаем логистические издержки при крупных партиях.</p>
+            </div>
+            <div class="condition-card">
+                <img src="/assets/images/house.svg" alt="Склад" class="condition-icon">
+                <h3>Большой склад</h3>
+                <p>Современный складской комплекс в центре Нижнего Новгорода. Быстрая разгрузка.</p>
+            </div>
+            <div class="condition-card">
+                <img src="/assets/images/pay.svg" alt="Оплата" class="condition-icon">
+                <h3>Гибкая оплата</h3>
+                <p>Используем аккредитивы, банковские гарантии, минимизируя риски. Работаем с НДС и без.</p>
+            </div>
+            <div class="condition-card">
+                <img src="/assets/images/import.svg" alt="Импорт" class="condition-icon">
+                <h3>Импорт</h3>
+                <p>Имеем большой опыт работы с импортными поставками и ВЭД, включая логистику и таможенное оформление.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box reveal">
+            <h3>СДЕЛАТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</h3>
+            <p>Мы всегда открыты для новых партнеров. Заполните форму, и наш отдел закупок свяжется с вами.</p>
+            
+            <form class="partners-form">
+                <input type="text" placeholder="Название компании" class="form-input" required>
+                <input type="text" placeholder="Ваш товар" class="form-input" required>
+                <input type="text" placeholder="Телефон / Email" class="form-input" required>
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <span>Я согласен(а) на обработку персональных данных</span>
+                </label>
+                <button type="submit" class="btn btn-pulse">ОТПРАВИТЬ ПРЕДЛОЖЕНИЕ</button>
+            </form>
+            
+            <p style="margin-top: 25px;">
+                или пишите напрямую 
+                <a href="mailto:direktor@kolobok-nn.ru" style="color: var(--accent-color); font-weight: bold;">
+                    direktor@kolobok-nn.ru
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+@@include('partials/footer.html')
+
+<script src="js/main.js"></script>
+</body>
+</html>

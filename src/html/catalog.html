@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции | Колобок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+@@include('partials/header.html')
+
+<section class="about-header">
+    <div class="hero-slider">
+        <div class="slide" style="background-image: url('assets/images/slide1.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide2.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/slide3.png');"></div>
+    </div>
+    
+    <div class="container hero-content">
+        <h1>Каталог продукции</h1>
+        <p>Полный ассортимент бакалейных товаров, доступных к заказу</p>
+    </div>
+</section>
+
+<section class="section-spacing">
+    <div class="container">
+        <div class="filter-bar reveal">
+            <span class="filter-title">Фильтровать по:</span>
+            <div class="filter-tag active">Все</div>
+            <div class="filter-tag">Сахар</div>
+            <div class="filter-tag">Крупы</div>
+            <div class="filter-tag">Макароны</div>
+            <div class="filter-tag">Консервация</div>
+            <div class="filter-tag">Соль</div>
+            <div class="filter-tag">Хлопья</div>
+            <div class="filter-tag">Мука</div>
+        </div>
+
+        <div class="catalog-page-grid" id="productGrid">
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/sah_bel.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Сахар белый кристалический</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/rozki_mel.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Рожки маленькие</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/sol_pisev.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Соль пищевая поваренная йодированная</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/trosnik_sah.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Тростниковый сахар  TM "Домашний ужин"</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/pis_kam_sol.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Пищевая каменная соль</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+            
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/goroh_kol.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Горох колотый</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/kartof_hlopia.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Картофельные хлопья</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/sol_pis_blue.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Соль пищевая поваренная каменная 1 помол</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="/assets/images/catalog/macaron.png" class="card-img-wrap">
+                <div class="card-content">
+                    <h3>Макароны длинные тонкие</h3>
+                    <div class="card-link btn-request">ЦЕНА ПО ЗАПРОСУ &rarr;</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 60px;" class="reveal">
+            <button class="btn">Показать ещё</button>
+        </div>
+    </div>
+</section>
+
+@@include('partials/footer.html')
+
+<script src="js/main.js"></script>
+</body>
+</html>

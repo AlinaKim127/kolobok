@@ -1,0 +1,68 @@
+.partners {
+    padding: 80px 0;
+    background: #2c3e5007;
+
+    .partners-subtitle {
+        text-align: center;
+        color: #999;
+        margin-bottom: 30px; /* Увеличено для мобильных */
+        font-size: clamp(0.85rem, 2vw, 1.3rem); /* Адаптивный размер */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        padding: 0 15px; /* Отступы для мобильных */
+    }
+
+    .partners-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: clamp(20px, 4vw, 50px); /* Адаптивный gap */
+        align-items: center;
+        padding: 0 15px; /* Отступы для мобильных */
+
+        .partner-logo {
+            max-width: clamp(120px, 15vw, 180px); /* Адаптивная ширина */
+            height: auto;
+            transition: 0.4s;
+            cursor: pointer;
+            display: block; /* Убирает лишние отступы */
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partners {
+        padding: 50px 0;
+
+        .partners-grid {
+            gap: 30px;
+            
+            .partner-logo {
+                max-width: 100px; /* Уменьшаем логотипы */
+                flex: 0 0 45%; /* 2 в ряд на маленьких экранах */
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .partners {
+        padding: 40px 0;
+
+        .partners-grid {
+            gap: 20px;
+            
+            .partner-logo {
+                max-width: 80px;
+                flex: 0 0 100%; /* 1 в ряд на очень маленьких */
+                margin: 0 auto; /* Центрирование */
+            }
+        }
+    }
+}
